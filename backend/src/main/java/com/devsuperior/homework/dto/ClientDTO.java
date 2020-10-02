@@ -8,7 +8,7 @@ import com.devsuperior.homework.entities.Client;
 public class ClientDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	// variaveis de instância
+	//variaveis de instância
 	private Long id;
 	private String name;
 	private String cpf;
@@ -16,7 +16,7 @@ public class ClientDTO implements Serializable {
 	private Instant birthDate;
 	private Integer children;
 
-	// 
+	//construtores
 	public ClientDTO() {
 	}
 	public ClientDTO(Long id, String name, String cpf, Double income, Instant birthDate, Integer children) {
@@ -27,7 +27,6 @@ public class ClientDTO implements Serializable {
 		this.birthDate = birthDate;
 		this.children = children;
 	}
-	    //contrutor com a entity para facilitar o povamento na instanciação
 	public ClientDTO(Client entity) {
 		this.id = entity.getId();
 		this.name = entity.getName();
@@ -38,7 +37,7 @@ public class ClientDTO implements Serializable {
 	}
 	
 
-	// getters e setters
+	//getters e setters
 	public Long getId() {
 		return id;
 	}
