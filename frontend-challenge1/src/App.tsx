@@ -1,9 +1,13 @@
 import React from 'react';
 import './App.css';
+import Header from './core/components/Header';
 
 const App = () => {
   return (
-    <h1>Hello World!</h1>
+    <div>
+      <Header />
+    </div>
+    
   );
 }
 
