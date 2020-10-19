@@ -1,0 +1,37 @@
+.home-container {
+   padding-top: 115px;
+   padding-left: 120px;
+   padding-bottom: 265px;
+   width: 615px;
+}
+
+.home-content-title {
+   font-family: "Red Hat Display";
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 64px;
+   display: flex;
+   align-items: center;
+   letter-spacing: 0.02em;
+   color: #062847;
+}
+.home-content-subtitle {
+   margin-top: 25px;
+}
+
+.home-content-paragraphs {
+   font-family: "Red Hat Display";
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 36px;
+   color: #5A6774;
+}
+
+.home-content-paragraphs-email {
+   color: #1890FF;
+   text-decoration: none;
+}
+ 
+a:link {
+   text-decoration: none;
+}
