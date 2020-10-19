@@ -1,3 +1,4 @@
+import ButtonIcon from 'core/components/ButtonIcon';
 import React from 'react';
 import './styles.css';
 
@@ -20,6 +21,9 @@ const Home = () => {
                <a href="mailto:antforfigma@gmail.com"><span className="home-content-paragraphs-email"> antforfigma@gmail.com</span></a>
             </p>
          </div>
+       </div>
+       <div className="home-content-button-icon">
+          <ButtonIcon />
        </div>
     </div>
    );
