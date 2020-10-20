@@ -1,0 +1,32 @@
+.search-area-container {
+   width: 1250px;
+   height: 210px;
+   background: #E6F7FF;
+   border-radius: 16px;
+   padding-top: 65px;
+   padding-left: 95px;
+   padding-right: 95px;
+   padding-bottom: 40px;
+}
+
+.search-area-title {
+   font-weight: 500;
+   font-size: 38px;
+   color: #262626;
+}
+
+.form-container {
+
+}
+
+.search-area-input-text {
+   width: 675px;
+   height: 40px;
+   background: #FFFFFF;
+   border: 1px solid #D9D9D9;
+   border-radius: 4px;
+}
+
+.form-content-button {
+   margin-top: 25px;
+}

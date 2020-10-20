@@ -25,7 +25,7 @@ const Home = () => {
          </div>
          <div className="home-content-button-icon">
             <Link to="/search">
-               <ButtonIcon />
+               <ButtonIcon textButton="Começar"/>
             </Link>
          </div>
       </div>

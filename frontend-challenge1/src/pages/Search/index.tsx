@@ -1,10 +1,11 @@
 import React from 'react';
+import SearchArea from './components/SearchArea';
 import './styles.css';
 
 const Search = () => {
    return (
-      <div>
-         Search
+      <div className="search-container">
+         <SearchArea />
       </div>
    );
 }

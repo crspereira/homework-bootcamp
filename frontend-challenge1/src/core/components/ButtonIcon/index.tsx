@@ -1,12 +1,16 @@
 import React from 'react';
 import './styles.css';
 
-const ButtonIcon = () => {
+type Props = {
+   textButton: string;
+}
+
+const ButtonIcon = ({textButton}: Props) => {
    return (
       //<div className="button-icon-container">
          <button className="button-icon-content">
             <span className="button-icon-content-text">
-               Começar
+               {textButton}
             </span>
          </button>
       //</div>
