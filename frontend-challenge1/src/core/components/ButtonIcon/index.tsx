@@ -3,13 +3,13 @@ import './styles.css';
 
 const ButtonIcon = () => {
    return (
-      <div>
-         <button className="button-icon-container" >
-            <span className="button-icon-content">
+      //<div className="button-icon-container">
+         <button className="button-icon-content">
+            <span className="button-icon-content-text">
                Começar
             </span>
          </button>
-      </div>
+      //</div>
    );
 }
 
