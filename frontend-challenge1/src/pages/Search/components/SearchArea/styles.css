@@ -1,11 +1,8 @@
 .search-area-container {
-   display: grid;
-   align-items: center;
-   justify-content: center;
-}
-.search-area-content {
    width: 1250px;
-   height: 210px;
+}
+
+.search-area-content {
    background: #E6F7FF;
    border-radius: 16px;
    padding-top: 65px;
@@ -15,6 +12,7 @@
 }
 
 .search-area-title {
+   margin: 0px 0px 11px 0px;
    font-weight: 500;
    font-size: 38px;
    color: #262626;
@@ -36,7 +34,7 @@
 }
 
 .form-content-button {
-   margin-top: 25px;
+   margin-top: 24px;
 }
 
 .search-content-result{
