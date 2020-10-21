@@ -12,10 +12,10 @@ const Home = () => {
          </div>
             <div className="home-content-subtitle">
                <p className="home-content-paragraphs">
-                  Bem-vindos ao desafio do capítulo 3 do Bootcamp DevSuperior.
+                  Layout construido com "puro" CSS, sem a biblioteca Bootstrap.
                </p>
                <p className="home-content-paragraphs">
-                  Favor observar as instruções passadas no capítulo sobre a elaboração deste projeto.
+                  Para a programação foram abordados conceitos como useState, useEffect, Axio, Routes, Loader e Componentização.
                </p>
                <p className="home-content-paragraphs">
                   Este design foi adaptado a partir de Ant Design System for Figma, de Mateusz Wierzbicki:

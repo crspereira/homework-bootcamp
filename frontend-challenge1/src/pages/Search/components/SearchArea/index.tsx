@@ -4,10 +4,8 @@ import { GitHubResponse } from 'core/types/GitHub';
 import SearchResult from '../SearchResult';
 import './styles.css';
 import { makeRequest } from 'core/utils/request';
-//import InfoLoader from '../SearchLoaders/components/InfoLoader';
 import SearchLoader from '../SearchLoaders';
-//import InfoLoader from '../SearchLoaders/components/InfoLoader';
-//import LogoGit from 'core/assets/logoGit-gray.png';
+
 
 
 const SearchArea = () => {
@@ -79,11 +77,6 @@ const SearchArea = () => {
                      </div>)}
                   </div>
                </>)}
-               {/* {!userData && (
-               <div> 
-                  <InfoLoader />
-               </div>)}*/}
-               
          </div>
       </div>
    );

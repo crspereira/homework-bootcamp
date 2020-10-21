@@ -1,7 +1,7 @@
 import React from 'react';
-//import LogoGit from 'core/assets/logoGit-gray.png';
-import './styles.css';
 import ButtonIcon from 'core/components/ButtonIcon';
+//import dayjs from 'dayjs';
+import './styles.css';
 
 type Props = {
    html_url?: string, avatar_url?: string,
@@ -11,10 +11,15 @@ type Props = {
    created_at?: string
 }
 
+///let now = dayjs();
+//console.log("data: " + now.format());
+
 const SearchResult = ({ html_url, avatar_url, public_repos, followers, following,
                         company, blog, location, created_at }: Props) => {
+
    return (
       <div className="search-result-container">
+         
          <div className="search-result-content-col-1">
             <img src={avatar_url} alt="Imagem Perfil GitHub" className="search-result-content-img" />
             <span>
