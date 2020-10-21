@@ -1,27 +1,75 @@
+import React, { useState } from 'react';
 import ButtonIcon from 'core/components/ButtonIcon';
-import React from 'react';
+import { GitHubResponse } from 'core/types/GitHub';
+import SearchResult from '../SearchResult';
 import './styles.css';
+import { makeRequest } from 'core/utils/request';
+//import LogoGit from 'core/assets/logoGit-gray.png';
+
 
 const SearchArea = () => {
+   const [search, setSearch] = useState('');
+   const [userData, setUserData] = useState<GitHubResponse>();
+
+   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+      event.preventDefault();
+      //console.log('Submit!');
+      // fetch(`https://api.github.com/users/${search}`)
+      //     .then(response => response.json())
+      //     .then(userResponse => setUserData(userResponse));
+      makeRequest({url:`${search}`})
+           .then(userResponse => setUserData(userResponse.data));
+   }
+   
+   const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+      //console.log(event.target.value)
+      setSearch(event.target.value);
+   }
+
    return (
       <div className="search-area-container">
-         <h1 className="search-area-title">
-            Encontre um perfil Github
+         <div className="search-area-content">
+            <h1 className="search-area-title">
+               Encontre um perfil Github
          </h1>
-         <form action="">
-            <div className="form-container">
-               <input 
-                  type="text" 
-                  className="search-area-input-text"
-                  required
-               />
-               <div className="form-content-button">
-                  <span >
+            <form onSubmit={handleSubmit}>
+               <div className="form-container">
+                  <input
+                     type="text"
+                     className="search-area-input-text"
+                     required
+                     value={search}
+                     onChange={handleOnChange}
+                     placeholder="Usuário Github"
+                  />
+                  <div className="form-content-button">
+                     <span >
                         <ButtonIcon textButton="Encontrar" />
-                  </span>
+                     </span>
+                  </div>
                </div>
-            </div>
-         </form>
+            </form>
+         </div>
+         <div className="search-content-result">
+               {!userData && (
+               <div> 
+                  <SearchResult />
+               </div>)}
+               {userData && (
+               <div>
+                  <SearchResult 
+                     html_url = {userData.html_url}
+                     avatar_url = {userData.avatar_url}
+                     public_repos = {userData.public_repos}
+                     followers = {userData.followers}
+                     following = {userData.following}
+                     company = {userData.company}
+                     blog = {userData.blog}
+                     location = {userData.location}
+                     created_at = {userData.created_at}
+                  />
+               </div>)}
+         </div>
       </div>
    );
 }

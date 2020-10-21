@@ -18,7 +18,7 @@
 }
 
 .search-result-content-col-2 {
-
+   margin-top: 0px;
 }
 
 .search-result-content-info-1 {
@@ -26,8 +26,8 @@
 
 }
 
-.content-info-1-field {
-   padding: 2px 14px 2px 14px;
+.content-info-1-field-repo {
+   width: 175px;
    background: #FFFFFF;
    border: 1px solid #D9D9D9;
    box-sizing: border-box;
@@ -35,6 +35,39 @@
    font-size: 12px;
    color: #595959;
    line-height: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 11px;
+}
+
+.content-info-1-field-followers {
+   width: 125px;
+   background: #FFFFFF;
+   border: 1px solid #D9D9D9;
+   box-sizing: border-box;
+   border-radius: 5px;
+   font-size: 12px;
+   color: #595959;
+   line-height: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 11px;
+}
+
+.content-info-1-field-following {
+   width: 115px;
+   background: #FFFFFF;
+   border: 1px solid #D9D9D9;
+   box-sizing: border-box;
+   border-radius: 5px;
+   font-size: 12px;
+   color: #595959;
+   line-height: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    margin-right: 11px;
 }
 
@@ -70,5 +103,11 @@
    font-weight: 700;
    font-size: 16px;
    line-height: 24px;
+   color: #737373;
+}
+
+.content-info-2-field-text {
+   margin-left: 8px;
+   font-weight: 400;
    color: #737373;
 }
