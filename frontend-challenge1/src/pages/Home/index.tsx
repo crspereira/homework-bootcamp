@@ -15,7 +15,7 @@ const Home = () => {
                   Layout construido com "puro" CSS, sem a biblioteca Bootstrap.
                </p>
                <p className="home-content-paragraphs">
-                  Para a programação foram abordados conceitos como useState, useEffect, Axio, Routes, Loader e Componentização.
+                  Para a programação foram abordados conceitos como useState, useEffect, Axio, Routes, Loader, Day.js e Componentização.
                </p>
                <p className="home-content-paragraphs">
                   Este design foi adaptado a partir de Ant Design System for Figma, de Mateusz Wierzbicki:

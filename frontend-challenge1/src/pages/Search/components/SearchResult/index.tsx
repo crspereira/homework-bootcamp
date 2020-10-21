@@ -1,7 +1,7 @@
 import React from 'react';
 import ButtonIcon from 'core/components/ButtonIcon';
-//import dayjs from 'dayjs';
 import './styles.css';
+import DataConverter from 'core/utils/DataConverter';
 
 type Props = {
    html_url?: string, avatar_url?: string,
@@ -11,8 +11,7 @@ type Props = {
    created_at?: string
 }
 
-///let now = dayjs();
-//console.log("data: " + now.format());
+//console.log("data1: " + DataConverter({data: '2020-02-13T12:53:47Z'}));
 
 const SearchResult = ({ html_url, avatar_url, public_repos, followers, following,
                         company, blog, location, created_at }: Props) => {
@@ -72,7 +71,7 @@ const SearchResult = ({ html_url, avatar_url, public_repos, followers, following
                   <span className="content-info-2-field-title">
                      Membro desde:
                      <span className="content-info-2-field-text">
-                        {created_at}
+                        {DataConverter({data: `${created_at}`})}
                      </span>
                   </span>
                </div>
